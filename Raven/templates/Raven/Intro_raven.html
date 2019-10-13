@@ -1,0 +1,38 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        This is the second part of the study.
+    </p>
+    <p>
+        In this task we will show to you 10 exercises. In each of this exercises, you are asked to complete a logical
+        sequence of images. To do it, yo have to choose the missing image form a set of 5 images that we will show to you.
+        Only one of the options is the correct one. When you click on one of the options, the next exercise will be
+        shown to you. You have 1 minute to solve as many exercises as you can.
+    </p>
+    <p>
+        For each correct answer you will get 1 Experimental Currency Unit (ECU). At the end of this exercise the ECU
+        that constitute your payment will be converted to Colombian Pesos. Each ECU is equivalent to 1000 Colombian
+        Pesos.
+    </p>
+    <p>
+        If you have any questions, raise your hand and some assistant will approach you to solve it.
+    </p>
+    <p>
+        Whenever you are ready to start, click on the "next" button.
+    </p>
+
+    {% next_button %}
+{% endblock %}
+
+
+{% block styles  %}
+    <link href="{% static "static_raven/css/style_raven.css" %}" rel="stylesheet">
+{% endblock %}
+

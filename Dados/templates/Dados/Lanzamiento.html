@@ -1,0 +1,50 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Dice
+{% endblock %}
+
+{% block content %}
+
+        <table class="table">
+            <tr>
+                <th>Die roll result</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <td>Payment in ECU</td>
+                <td>2 ECU</td>
+                <td>4 ECU</td>
+                <td>6 ECU</td>
+                <td>8 ECU</td>
+                <td>10 ECU</td>
+                <td>0 ECU</td>
+            </tr>
+        </table>
+    <p>
+        Please take the die in front of you and roll it.
+    </p>
+    <p>
+        {% formfield player.reporte_numero %}
+    </p>
+    <p>
+        {% formfield player.reporte_pago %}
+    </p>
+    <p>
+        If you already made the rolls, please press the "next" button.
+    </p>
+
+    {% next_button %}
+
+{% endblock %}
+
+{% block styles  %}
+    <link href="{% static "static_dados/css/style_dados.css" %}" rel="stylesheet">
+{% endblock %}
+

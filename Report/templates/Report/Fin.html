@@ -1,0 +1,29 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    The end
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        We thank you for your participation in this research.
+    </p>
+    <p>
+        Please remain sited in your seat. we will call you by your name to hand you over the envelope with your payment.
+        Please bring the pen and the die. After this you can step out of the room.
+    </p>
+    <p>
+        If you wish to participate in an activity similar to this in which you can also earn some money, please write
+        your e-mail for us to reach to you later.
+    </p>
+{% formfield player.e_mail %}
+    <p>
+        Have a good day.
+    </p>
+
+    {% next_button %}
+
+{% endblock %}
+

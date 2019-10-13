@@ -1,0 +1,59 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        This is the second part of the study.
+    </p>
+    <p>
+        In this task we will show you a set of images for 30 seconds. You will see 20 images on
+        the screen like this one:
+    </p>
+    <div class="container">
+        <button type="button" class="memory_tile" id="ej_0"></button>
+    </div>
+    <p>
+        After the 30 seconds, the screen will disappear and then will appear a series of screens in which in each
+        one of them we will show you 3 images. Only one of these images was included in the previous screen with the 20
+        initial images. In total, we will show you 20 sets of 3 images. For each of these sets we will ask you to select the
+        image that was included in the initial set of 20 images.
+    </p>
+    <p>
+        For example:
+    </p>
+    <div class="container">
+        <button type="button" class="memory_tile" id="ej_1"></button>
+        <button type="button" class="memory_tile" id="ej_2"></button>
+        <button type="button" class="memory_tile" id="ej_3"></button>
+    </div>
+    <p>
+        From these 3 images you will have to select the one that appeared in the initial set of 20 images. You have 1
+        minute to answer as many questions as you can.
+    </p>
+    <p>
+        For each correct answer you will get 1 Experimental Currency Unit (ECU). At the end of this exercise the ECU
+        that constitute your payment will be converted to Colombian Pesos. Each ECU is equivalent to 1000 Colombian
+        pesos.
+    </p>
+    <p>
+        If you have any questions, raise your hand and some assistant will approach you to solve it.
+    </p>
+    <p>
+        Whenever you are ready to start, click on the "next" button.
+    </p>
+
+    {% next_button %}
+{% endblock %}
+
+{% block styles  %}
+    <link href="{% static "static_memory/css/style_memory.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static "static_memory/memory_javascript/memory.js" %}"></script>
+{% endblock %}

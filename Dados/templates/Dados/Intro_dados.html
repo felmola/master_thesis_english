@@ -1,0 +1,62 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block content %}
+    <p>
+        This is the second part of the study.
+    </p>
+    <p>
+        In this task you will determine you own payment by rolling a die in two occasions when you are told to do so.
+        Your first throw will determine how much you will receive
+    </p>
+    <p>
+        You can see the exact payment in the following table:
+    </p>
+        <table class="table">
+            <tr>
+                <th>Die roll result</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <td>Payment in ECU</td>
+                <td>2 ECU</td>
+                <td>4 ECU</td>
+                <td>6 ECU</td>
+                <td>8 ECU</td>
+                <td>10 ECU</td>
+                <td>0 ECU</td>
+            </tr>
+        </table>
+    <p>
+        This table will remain on the screen until you have typed the value you rolled on the die. The purpose of the
+        second roll is only for you to make sure that the die is working properly. You may roll the die more than
+        twice, however, it is only the first roll that counts. Have in mind that your roll is completely private. In
+        the following screen you are going to be asked to make your rolls.
+    </p>
+    <p>
+        At the end of this exercise the ECU that constitute your payment will be converted to Colombian Pesos.
+        Each ECU is equivalent to 1000 Colombian Pesos.    </p>
+    <p>
+        If you have any questions, raise your hand and some assistant will approach you to solve it.
+    </p>
+    <p>
+        Whenever you are ready to start, click on the "next" button.
+    </p>
+
+    {% next_button %}
+
+{% endblock %}
+
+{% block styles  %}
+    <link href="{% static "static_dados/css/style_dados.css" %}" rel="stylesheet">
+{% endblock %}
+

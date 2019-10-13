@@ -1,0 +1,69 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Questionnaire
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Now we are calculating your payment. While we do so, please fill in the following questionnaire.
+</p>
+
+{% formfield player.sexo %}
+{% formfield player.edad %}
+{% formfield player.estado_civil %}
+{% formfield player.carrera %}
+{% formfield player.matricula %}
+{% formfield player.edu_padre %}
+{% formfield player.edu_madre %}
+{% formfield player.estrato %}
+{% formfield player.ingreso %}
+{% formfield player.localidad %}
+{% formfield player.peso %}
+{% formfield player.altura %}
+
+<p> How do you consider yourself? Normally, are you a person totally willing to take risks? or do you try to avoid
+    taking risks? Please answer it using the following scale from 1 to 5, where 1 means "totally willing to take risks"
+    and 5 means "totally averse to take risks"
+</p>
+    <div class="table-responsive text-center align-middle">
+        <table class="table table-bordered" style="max-width:970px; font-size: 12px">
+            <tr>
+                <td >Totally willing to take risks</td>
+                <td><div class="radio "><label><input type="radio" name="fehr_1" value="1"> 1</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_1" value="2"> 2</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_1" value="3"> 3</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_1" value="4"> 4</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_1" value="5"> 5</label></div></td>
+                <td >Totally averse to take risks</td>
+            </tr>
+            <tr>
+        </table>
+    </div>
+
+<p> How do you consider yourself? Normally, are you a person totally willing to take risks of financial nature? or do you try to avoid
+    taking risks of financial nature? Please answer it using the following scale from 1 to 5, where 1 means "totally willing to take risks"
+    and 5 means "totally averse to take risks"
+</p>
+    <div class="table-responsive text-center align-middle">
+        <table class="table table-bordered" style="max-width:970px; font-size: 12px">
+            <tr>
+                <td >Totally willing to take risks</td>
+                <td><div class="radio "><label><input type="radio" name="fehr_2" value="1"> 1</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_2" value="2"> 2</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_2" value="3"> 3</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_2" value="4"> 4</label></div></td>
+                <td><div class="radio "><label><input type="radio" name="fehr_2" value="5"> 5</label></div></td>
+                <td >Totally averse to take risks</td>
+            </tr>
+            <tr>
+        </table>
+    </div>
+
+{% formfield player.seicientos %}
+
+    {% next_button %}
+
+{% endblock %}

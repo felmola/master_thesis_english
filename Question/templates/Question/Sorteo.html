@@ -1,0 +1,65 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Draw
+{% endblock %}
+
+{% block content %}
+
+    <p>
+        Now we will sort which of the four activities from the second part we are going to pay. Please do not click on
+        the "next" button but only when you are asked to do so.
+    </p>
+    <p>
+        Please pay attention to the researcher's instruction.
+    </p>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-sm" style="max-width:200px; font-size: 16px">
+            <tr>
+                <td>      </td>
+                <th >Ballot</th>
+                <th>Task</th>
+                <th>Payment</th>
+            </tr>
+            <tr>
+                <td class="bg-secondary">      </td>
+                <td>-</td>
+                <td>Additions</td>
+                <td nowrap>{{ sumas_total_payoff }} points</td>
+            </tr>
+            <tr>
+                <td class="bg-primary">      </td>
+                <td>Blue</td>
+                <td>Memory</td>
+                <td nowrap>{{ memory_total_payoff }} ECU</tdnowrap>
+            </tr>
+            <tr>
+                <td class="bg-success">      </td>
+                <td>Green</td>
+                <td>Dice</td>
+                <td nowrap>{{ dados_total_payoff }} ECU</td>
+            </tr>
+            <tr>
+                <td class="bg-warning">      </td>
+                <td>Yellow</td>
+                <td>Loteries</td>
+                <td nowrap>{{ lottery_total_payoff }} ECU</td>
+            </tr>
+            <tr>
+                <td class="bg-danger">      </td>
+                <td>Red</td>
+                <td>Logic</td>
+                <td nowrap>{{ raven_total_payoff }} ECU</td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <p>
+        Only when you are told to, press the "next" button.
+    </p>
+
+    {% next_button %}
+{% endblock %}
+

@@ -1,0 +1,52 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Informed consent
+{% endblock %}
+
+{% block content %}
+
+    <p>You have been invited to participate in a study with the objective of understanding how people make decisions. This
+        research will be conducted by Andrés Felipe Montealegre Olaya under the supervision of Professor Francesco
+        Bogliacino, affiliated to Facultad de Ciencias Económicas from Universidad Nacional de Colombia. You must be of
+        legal age, that is, being 18 years or or more, to participate in this study.
+    </p>
+    <p>If you accept, you will have to do four tasks and make one decision. Additionally, you will have to answer some
+        questions. You will do these activities in a place in which you can feel comfortable to do them. Participation
+        in this activity will take approximately 1 hour of your time.
+    </p>
+    <p>Your participation is completely voluntary and you can walk away at any time. Likewise, if you wish to leave
+        unanswered some questions you are free to do so. However, we the researchers would appreciate if you could
+        answer them all.
+    </p>
+    <p>This study follows the colombian ethical dispositions in research, the Resolution 8430 of 1993, which establishes
+         the scientific, technical and administrative regulatory framework for scientific studies that involves the
+        participation of human beings. This research is classified as one in which the participation of human beings is
+        of low risk in the sense that it does not generate risks during or after the research for those who participate in
+        it. The possible inconveniences are associated with the time it takes to complete the activities required in this
+        research.
+    </p>
+    <p>If there is anything related to this research that you want to be clarified, if you wish to inform of any
+        problem or have questions regarding your rights as a participant or any other aspect of this research, please
+        do not hesitate to contact Professor Francesco Bogliacino (phone number: 316-5000 ext. 12388, e-mail:
+        fbogliacino@unal.edu.co).
+    </p>
+    <p>By writing your name and you id number in what follows, you declare to have been properly informed and that you
+        participate in this research in a voluntarily.
+    </p>
+    <p>Attentively,
+    </p>
+    <p>Andrés Felipe Montealegre Olaya.
+    </p>
+    <p>
+    </p>
+    <p>First name and last name: {{ form.nombre }}
+    </p>
+    <p>Id number: {{ form.id_number }}
+    </p>
+
+
+    {% next_button %}
+
+{% endblock %}
