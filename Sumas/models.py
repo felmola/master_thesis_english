@@ -19,8 +19,8 @@ class Constants(BaseConstants):
     num_rounds = 100
     half_way = (num_rounds / 2)
 
-    time_limit = 60*4
-    #time_limit = 10
+    #time_limit = 60*4
+    time_limit = 30
 
     piece_rate = 1000
     nis = 0.5
