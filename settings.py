@@ -15,8 +15,8 @@ SESSION_CONFIGS = [
     {
         'name': 'SHOCKS_1',
         'display_name': "SHOCKS_1",
-        'num_demo_participants': 4,
-        #'num_demo_participants': 2,
+        #'num_demo_participants': 4,
+        'num_demo_participants': 2,
         'app_sequence': ['Consent', 'Sumas', 'Memory', 'Raven', 'Dados', 'Lottery', 'Question', 'Report'],
         'use_browser_bots': False
     },
