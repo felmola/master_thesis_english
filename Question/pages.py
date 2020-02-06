@@ -4,7 +4,7 @@ from .models import Constants
 
 class NormalWaitPage(WaitPage):
     body_text = "Please wait for the other participants to start the draw of the activity to pay from the second " \
-                "part of the exercise"
+                "part of the exercise."
 
 
 class Sorteo(Page):

@@ -49,7 +49,7 @@ class Player(BasePlayer):
     )
 
     matricula = models.IntegerField(
-        verbose_name='How many semesters have you paid counting the current one?'
+        verbose_name='How many semesters have you paid, including the current one?'
     )
 
     estrato = models.IntegerField(
@@ -116,7 +116,7 @@ class Player(BasePlayer):
     edu_madre = models.CharField(
         choices=['None', 'Elementary school', 'High school', 'Some university degree', 'Technical school', 'Higher education',
                  'Graduate education'],
-        verbose_name='What is your mothers´s maximum degree of education?',
+        verbose_name='What is your mother’s maximum degree of education?',
 #        widget=widgets.RadioSelect()
     )
 
@@ -125,7 +125,7 @@ class Player(BasePlayer):
     )
 
     altura = models.IntegerField(
-        verbose_name='What is your height in centimeters'
+        verbose_name='What is your height in centimeters?'
     )
 
     fehr_1 = models.IntegerField(
@@ -166,8 +166,8 @@ class Player(BasePlayer):
     seicientos = models.CharField(
         choices=['I will not have any difficulty.', 'I will have some difficulty, but will get it.', 'I do not know if I will get it.',
                  'Definitely, I will not get it.'],
-        verbose_name='If you need to find $600000 in a week, to cover an unexpected expenditure, how much difficult'
-                     ' would it be to get the money?',
+        verbose_name='If you need to find $600,000 in one week to cover an unexpected expenditure, how much difficulty'
+                     ' would there be in getting the money?',
         widget=widgets.RadioSelect()
     )
 
